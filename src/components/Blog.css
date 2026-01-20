@@ -106,6 +106,27 @@
   flex-grow: 1;
 }
 
+.blog-post-links {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0 0 1.5rem 0;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.blog-post-links li + li {
+  margin-top: 0.4rem;
+}
+
+.blog-post-links a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+.blog-post-links a:hover {
+  text-decoration: underline;
+}
+
 .blog-post-footer {
   display: flex;
   justify-content: space-between;
