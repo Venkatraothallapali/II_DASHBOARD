@@ -117,7 +117,7 @@ const ProductsShowcase: FC = () => {
               </li>
             </ul>
             <a 
-              href="https://veritascribe.netlify.app/" 
+              href="https://veritascribeproductpage.netlify.app/" 
               className="product-link"
             >
               Learn More →
