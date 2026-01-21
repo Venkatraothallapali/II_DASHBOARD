@@ -3,7 +3,7 @@ import './GMPCompliance.css'
 
 const QualityTraining: FC = () => {
   return (
-    <div className="gmp-compliance-page">
+    <div className="gmp-compliance-page quality-training-page">
       {/* Hero Section */}
       <section className="gmp-hero">
         <div className="hero-card">

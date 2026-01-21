@@ -3,7 +3,7 @@ import './GMPCompliance.css'
 
 const ComplaintSiteSearch: FC = () => {
   return (
-    <div className="gmp-compliance-page">
+    <div className="gmp-compliance-page complaint-site-page">
       {/* Hero Section */}
       <section className="gmp-hero">
         <div className="hero-card">

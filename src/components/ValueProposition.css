@@ -1,6 +1,6 @@
 .value-proposition {
   padding: 8rem 2rem;
-  background: var(--bg-primary);
+  background: #0b1c2a;
   position: relative;
   overflow: hidden;
   min-height: 600px;
@@ -18,13 +18,16 @@
   z-index: 1;
 }
 
-.value-proposition-bg-image {
+.value-proposition-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
-  filter: none;
-  opacity: 1;
+  object-fit: cover; /* fill without letterboxing */
+  object-position: 35% center; /* keep microscope visible */
+  background: #0b1c2a;
+  z-index: 1;
 }
 
 .value-proposition-overlay {
@@ -34,10 +37,10 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    135deg,
-    rgba(31, 131, 201, 0.85) 0%,
-    rgba(16, 69, 92, 0.9) 50%,
-    rgba(31, 131, 201, 0.85) 100%
+    120deg,
+    rgba(0, 15, 40, 0.18) 0%,
+    rgba(0, 10, 30, 0.18) 60%,
+    rgba(0, 8, 25, 0.22) 100%
   );
   z-index: 2;
 }

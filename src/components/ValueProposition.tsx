@@ -7,11 +7,18 @@ const ValueProposition: FC = () => {
   return (
     <section id="who-we-are" className="value-proposition">
       <div className="value-proposition-background">
-        <img 
-          src="/assets/background_ai image.avif" 
-          alt="Background" 
-          className="value-proposition-bg-image"
-        />
+        <video
+          className="value-proposition-bg-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source
+            src="/assets/Complaint Site selection_vid.mp4"
+            type="video/mp4"
+          />
+        </video>
         <div className="value-proposition-overlay"></div>
       </div>
       <div className="value-proposition-container">

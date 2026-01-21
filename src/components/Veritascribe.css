@@ -9,7 +9,7 @@
   padding: 6rem 2rem 2rem;
   text-align: center;
   color: white;
-  background-image: url('/assets/GMP_Background_Img.png');
+  background-image: url('/assets/AI Drafting Background_img.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -24,11 +24,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/assets/GMP_Background_Img.png');
+  background-image: url('/assets/AI Drafting Background_img.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  filter: blur(0.5px);
+  filter: none;
   z-index: 0;
 }
 
@@ -71,6 +71,11 @@
   margin: 0 0 1rem 0;
   letter-spacing: -0.02em;
   text-align: center;
+}
+
+/* AI Drafting page title color override */
+.veritascribe-page .hero-title {
+  color: #1e82c9;
 }
 
 .hero-subtitle {

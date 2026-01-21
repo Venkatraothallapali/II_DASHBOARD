@@ -21,7 +21,7 @@ const Footer: FC = () => {
               />
             </a>
             <p className="footer-tagline">
-              Enabling intelligent decision-making across regulated and complex industries
+              Powering intelligent & compliant decisions across pharma and life sciences
             </p>
           </div>
 

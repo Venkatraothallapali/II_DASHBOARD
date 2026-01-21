@@ -243,56 +243,17 @@ const VideoCreationService: FC = () => {
             </div>
           </section>
 
-          {/* Pricing Plans */}
-          <section id="pricing" className="content-section">
-            <h2 className="section-title">Pricing Plans</h2>
-            <div className="pricing-grid">
-              <div className="pricing-card">
-                <h3 className="pricing-tier">Starter</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">$99</span>
-                  <span className="price-period">/month</span>
-                </div>
-                <ul className="pricing-features">
-                  <li>Up to 10 videos/month</li>
-                  <li>Basic templates</li>
-                  <li>Standard quality</li>
-                  <li>Email support</li>
-                </ul>
-                <button className="pricing-button">Get Started</button>
-              </div>
-
-              <div className="pricing-card featured">
-                <div className="featured-badge">Most Popular</div>
-                <h3 className="pricing-tier">Professional</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">$299</span>
-                  <span className="price-period">/month</span>
-                </div>
-                <ul className="pricing-features">
-                  <li>Up to 50 videos/month</li>
-                  <li>Advanced templates</li>
-                  <li>HD quality</li>
-                  <li>Priority support</li>
-                  <li>Custom branding</li>
-                </ul>
-                <button className="pricing-button">Get Started</button>
-              </div>
-
-              <div className="pricing-card">
-                <h3 className="pricing-tier">Enterprise</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">Custom</span>
-                </div>
-                <ul className="pricing-features">
-                  <li>Unlimited videos</li>
-                  <li>Custom templates</li>
-                  <li>4K quality</li>
-                  <li>Dedicated support</li>
-                  <li>API access</li>
-                  <li>SLA guarantee</li>
-                </ul>
-                <button className="pricing-button">Contact Sales</button>
+          {/* CTA in place of pricing */}
+          <section className="content-section">
+            <div className="cta-card">
+            <h2 className="section-title cta-heading">Let’s design the right plan together</h2>
+              <p className="cta-subtext">
+                Tell us about your training volumes, formats, and compliance needs. We’ll tailor a package that fits your team.
+              </p>
+              <div className="cta-actions">
+                <a className="cta-button secondary" href="#contact">
+                  Contact
+                </a>
               </div>
             </div>
           </section>
