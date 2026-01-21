@@ -2,23 +2,59 @@
   min-height: 100vh;
   background: linear-gradient(180deg, #1e82c9 0%, #10455C 100%);
   position: relative;
+  padding-top: 80px;
 }
 
 /* Hero Section */
 .gmp-hero {
-  padding: 6rem 2rem 2rem;
+  padding: 6rem 2rem 0;
   text-align: center;
   color: white;
+  background-image: url('/assets/GMP_Background_Img.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.gmp-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assets/GMP_Background_Img.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  filter: blur(0.5px);
+  z-index: 0;
+}
+
+.gmp-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.gmp-hero {
+  background-image: none;
 }
 
 .hero-card {
-  background: white;
+  background: transparent;
   border-radius: 0.75rem;
-  padding: 1.75rem;
+  padding: 0;
   max-width: 230px;
   width: 100%;
-  margin: 4.5rem auto 1rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  margin: 1.5rem auto 0;
+  box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,16 +69,17 @@
 
 .hero-logo img {
   width: 100%;
-  max-width: 165px;
+  max-width: 220px;
   height: auto;
   display: block;
 }
 
 .hero-title {
-  font-size: clamp(3rem, 8vw, 5rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
   color: white;
   margin: 0 0 1rem 0;
+  margin-left: -3rem;
   letter-spacing: -0.02em;
   text-align: center;
 }
@@ -112,9 +149,10 @@
 
 /* Content Section */
 .gmp-content {
-  padding: 3rem 2rem;
+  padding: 0 2rem 3rem;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 0.4cm;
 }
 
 .content-card {
