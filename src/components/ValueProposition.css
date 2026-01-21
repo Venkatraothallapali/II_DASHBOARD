@@ -1,6 +1,7 @@
 .value-proposition {
   padding: 8rem 2rem;
-  background: #0b1c2a;
+  /* Use brand blue instead of near-black so initial load doesn't show a black flash */
+  background: #1e82c9;
   position: relative;
   overflow: hidden;
   min-height: 600px;
@@ -26,7 +27,8 @@
   height: 100%;
   object-fit: cover; /* fill without letterboxing */
   object-position: 35% center; /* keep microscope visible */
-  background: #0b1c2a;
+  /* Match section fallback color to avoid black flash before video paints */
+  background: #1e82c9;
   z-index: 1;
 }
 

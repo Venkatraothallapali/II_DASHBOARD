@@ -10,6 +10,7 @@
 
 /* Header */
 .video-header {
+  /* Solid brand header background (no image) */
   background: linear-gradient(135deg, #1e82c9 0%, #1e82c9 100%);
   padding: 6rem 2rem 4rem 2rem;
   color: white;
@@ -21,6 +22,8 @@
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;
+  /* Keep header title + subtitle lifted up by ~1cm */
+  transform: translateY(-1cm);
 }
 
 .header-logo {
@@ -66,7 +69,8 @@
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding: 2rem;
+  /* Reduce top padding so gap between header and first section is ~0.5cm */
+  padding: 0.5cm 2rem 2rem 2rem;
   gap: 2rem;
 }
 
@@ -184,7 +188,7 @@
 
 /* Section titles on Video Creation Service page */
 .video-service-page .section-title {
-  color: #ffffff;
+  color: #1e82c9;
 }
 
 /* Capabilities Grid */

@@ -203,13 +203,6 @@ const GMPCompliance: FC = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="gmp-cta">
-        <h2 className="cta-title">Ready to Transform Your Compliance Strategy?</h2>
-        <p className="cta-subtitle">
-          Discover how CompliSense can help your organization improve compliance
-        </p>
-      </section>
     </div>
   )
 }

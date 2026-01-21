@@ -1,6 +1,7 @@
 .veritascribe-page {
   min-height: 100vh;
-  background: linear-gradient(180deg, #1e82c9 0%, #10455C 100%);
+  /* Remove blue gradient so hero image appears immediately on AI Drafting / ECTD AI pages */
+  background: none;
   position: relative;
 }
 
@@ -76,6 +77,11 @@
 /* AI Drafting page title color override */
 .veritascribe-page .hero-title {
   color: #1e82c9;
+}
+
+/* Slight right shift for ECTD AI hero title only (about 0.2cm) */
+.ectd-ai-page .hero-title {
+  margin-left: 0.2cm;
 }
 
 .hero-subtitle {

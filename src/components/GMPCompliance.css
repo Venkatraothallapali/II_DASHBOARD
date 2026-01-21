@@ -1,9 +1,11 @@
 .gmp-compliance-page {
   min-height: 100vh;
-  background: linear-gradient(180deg, #1e82c9 0%, #10455C 100%);
+  /* Remove blue gradient so hero image appears immediately on all GMP-based solution pages */
+  background: none;
   position: relative;
   padding-top: 80px;
 }
+
 
 /* Quality Training specific hero background */
 .quality-training-page .gmp-hero {
@@ -412,13 +414,13 @@
 .cta-title {
   font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 700;
-  color: white;
+  color: #1e82c9;
   margin: 0 0 1rem 0;
 }
 
 .cta-subtitle {
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #1e82c9;
   margin: 0 0 2rem 0;
 }
 

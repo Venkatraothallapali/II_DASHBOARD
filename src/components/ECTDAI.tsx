@@ -3,7 +3,7 @@ import './Veritascribe.css'
 
 const ECTDAI: FC = () => {
   return (
-    <div className="veritascribe-page">
+    <div className="veritascribe-page ectd-ai-page">
       {/* Hero Section */}
       <section className="veritascribe-hero">
         <div className="hero-card">
@@ -12,9 +12,6 @@ const ECTDAI: FC = () => {
           </div>
         </div>
         <h1 className="hero-title">ECTD AI</h1>
-        <div className="hero-cta">
-          <button className="btn-primary btn-large">Request a Demo</button>
-        </div>
       </section>
 
       {/* What is ECTD AI Section */}

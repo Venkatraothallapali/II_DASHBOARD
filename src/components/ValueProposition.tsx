@@ -13,6 +13,7 @@ const ValueProposition: FC = () => {
           loop
           muted
           playsInline
+          preload="auto"
         >
           <source
             src="/assets/Complaint Site selection_vid.mp4"
