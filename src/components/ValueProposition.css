@@ -8,6 +8,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.3s ease;
+}
+
+/* Hide blue background once video is ready */
+.value-proposition.video-ready {
+  background: transparent;
 }
 
 .value-proposition-background {
@@ -30,6 +36,8 @@
   /* Match section fallback color to avoid black flash before video paints */
   background: #1e82c9;
   z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .value-proposition-overlay {
