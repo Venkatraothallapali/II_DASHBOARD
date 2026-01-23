@@ -51,6 +51,8 @@ const ProductsShowcase: FC = () => {
             <a 
               href="https://www.industryiceberg.com/" 
               className="product-link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Learn More →
             </a>
@@ -84,6 +86,8 @@ const ProductsShowcase: FC = () => {
             <a 
               href="https://gmpproduct.netlify.app/dashboard"
               className="product-link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Learn More →
             </a>
@@ -119,6 +123,8 @@ const ProductsShowcase: FC = () => {
             <a 
               href="https://veritascribeproductpag.netlify.app/" 
               className="product-link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Learn More →
             </a>

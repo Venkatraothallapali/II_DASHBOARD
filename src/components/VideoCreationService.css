@@ -157,6 +157,9 @@
   font-size: 0.9375rem;
   text-align: center;
   transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .cta-button:hover {
@@ -537,6 +540,8 @@
   border: 2px solid transparent;
   min-height: unset;
   width: auto;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .cta-button.primary {

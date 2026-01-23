@@ -1,7 +1,10 @@
 import type { FC } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './VideoCreationService.css'
 
 const VideoCreationService: FC = () => {
+  const navigate = useNavigate()
+  
   return (
     <div className="video-service-page">
       {/* Header */}
@@ -251,9 +254,12 @@ const VideoCreationService: FC = () => {
                 Tell us about your training volumes, formats, and compliance needs. We’ll tailor a package that fits your team.
               </p>
               <div className="cta-actions">
-                <a className="cta-button secondary" href="#contact">
-                  Contact
-                </a>
+                <button 
+                  className="cta-button secondary"
+                  onClick={() => navigate('/schedule-demo')}
+                >
+                  Request a Demo
+                </button>
               </div>
             </div>
           </section>

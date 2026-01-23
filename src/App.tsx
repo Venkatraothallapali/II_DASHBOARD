@@ -9,8 +9,13 @@ import GMPCompliance from './components/GMPCompliance'
 import ComplaintSiteSearch from './components/ComplaintSiteSearch'
 import QualityTraining from './components/QualityTraining'
 import Blog from './components/Blog'
+import BlogArticle from './components/BlogArticle'
 import ECTDAI from './components/ECTDAI'
 import VideoCreationService from './components/VideoCreationService'
+import PrivacyPolicy from './components/PrivacyPolicy'
+import TermsOfUse from './components/TermsOfUse'
+import ScheduleDemo from './components/ScheduleDemo'
+import ECTDDemo from './components/ECTDDemo'
 import './App.css'
 
 function App() {
@@ -57,6 +62,13 @@ function App() {
             <Footer />
           </div>
         } />
+        <Route path="/blog/:id" element={
+          <div className="App">
+            <Navbar />
+            <BlogArticle />
+            <Footer />
+          </div>
+        } />
         <Route path="/ectd-ai" element={
           <div className="App">
             <Navbar />
@@ -67,6 +79,30 @@ function App() {
           <div className="App">
             <Navbar />
             <VideoCreationService />
+          </div>
+        } />
+        <Route path="/privacy-policy" element={
+          <div className="App">
+            <Navbar />
+            <PrivacyPolicy />
+            <Footer />
+          </div>
+        } />
+        <Route path="/terms-of-use" element={
+          <div className="App">
+            <Navbar />
+            <TermsOfUse />
+            <Footer />
+          </div>
+        } />
+        <Route path="/schedule-demo" element={
+          <div className="App">
+            <ScheduleDemo />
+          </div>
+        } />
+        <Route path="/ectd-ai-demo" element={
+          <div className="App">
+            <ECTDDemo />
           </div>
         } />
       </Routes>

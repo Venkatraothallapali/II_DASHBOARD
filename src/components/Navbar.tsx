@@ -15,7 +15,7 @@ const Navbar: FC = () => {
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   const productsMenu: DropdownItem[] = [
-    { label: 'CDMO Finder', href: 'https://www.industryiceberg.com/' },
+    { label: 'CDMO Finder', href: 'https://tubular-douhua-2d2ec6.netlify.app/' },
     { label: 'CompliSense', href: 'https://gmpproduct.netlify.app/dashboard' },
     { label: 'VeritaScribe', href: 'https://veritascribeproductpag.netlify.app/' },
     { label: 'Video Creation Service', href: '/video-creation-service' },
@@ -103,19 +103,30 @@ const Navbar: FC = () => {
         onMouseEnter={() => setActiveDropdown(menuName)}
         onMouseLeave={() => setActiveDropdown(null)}
       >
-        {items.map((item, index) => (
-          <a
-            key={index}
-            href={item.href || '#'}
-            onClick={(e) => {
-              e.preventDefault()
-              handleMenuItemClick(item.href)
-            }}
-            className="dropdown-item"
-          >
-            {item.label}
-          </a>
-        ))}
+        {items.map((item, index) => {
+          const isExternalLink = item.href && (item.href.startsWith('http://') || item.href.startsWith('https://'))
+          
+          return (
+            <a
+              key={index}
+              href={item.href || '#'}
+              onClick={(e) => {
+                if (isExternalLink) {
+                  // Allow default behavior for external links (opens in new tab)
+                  setActiveDropdown(null)
+                  return
+                }
+                e.preventDefault()
+                handleMenuItemClick(item.href)
+              }}
+              className="dropdown-item"
+              target={isExternalLink ? "_blank" : undefined}
+              rel={isExternalLink ? "noopener noreferrer" : undefined}
+            >
+              {item.label}
+            </a>
+          )
+        })}
       </div>
     )
   }
@@ -225,7 +236,14 @@ const Navbar: FC = () => {
         </div>
 
         <div className="nav-actions">
-          <a href="#contact" className="nav-link contact-btn">Contact</a>
+          <a 
+            href="https://www.industryiceberg.com/contact-us/" 
+            className="nav-link contact-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contact
+          </a>
         </div>
       </div>
     </nav>

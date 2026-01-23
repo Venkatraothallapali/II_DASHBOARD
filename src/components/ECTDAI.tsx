@@ -1,7 +1,10 @@
 import type { FC } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Veritascribe.css'
 
 const ECTDAI: FC = () => {
+  const navigate = useNavigate()
+  
   return (
     <div className="veritascribe-page ectd-ai-page">
       {/* Hero Section */}
@@ -207,6 +210,51 @@ const ECTDAI: FC = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="content-card">
+          <div className="content-header">
+            <h2 className="content-title">Ready to Transform Your eCTD Submissions?</h2>
+          </div>
+          <div className="content-body">
+            <p className="content-intro">
+              Discover how ECTD AI can streamline your document validation process and ensure regulatory compliance. 
+              Schedule a demo to see our AI-powered platform in action.
+            </p>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
+              <button 
+                onClick={() => navigate('/ectd-ai-demo')}
+                style={{
+                  padding: '0.65rem 1.25rem',
+                  fontSize: '0.95rem',
+                  fontWeight: '700',
+                  borderRadius: '999px',
+                  background: '#1e82c9',
+                  color: '#ffffff',
+                  border: '2px solid #1e82c9',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontFamily: 'inherit'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = '#1a6ba8'
+                  e.currentTarget.style.borderColor = '#1a6ba8'
+                  e.currentTarget.style.transform = 'translateY(-2px)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = '#1e82c9'
+                  e.currentTarget.style.borderColor = '#1e82c9'
+                  e.currentTarget.style.transform = 'translateY(0)'
+                }}
+              >
+                Request a Demo
+              </button>
             </div>
           </div>
         </div>
