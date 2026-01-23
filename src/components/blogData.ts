@@ -9,6 +9,10 @@ export interface BlogPost {
   overview?: string
   summary?: string
   personalInsight?: string
+  links?: Array<{
+    label: string
+    url: string
+  }>
 }
 
 export const blogData: BlogPost[] = [
