@@ -133,28 +133,14 @@
 }
 
 .nav-link.contact-btn {
-  background: var(--primary-blue);
-  color: white;
-  padding: 0.6875rem 1.6rem;
-  border-radius: var(--radius-lg);
-  font-weight: 600;
-  transition: all var(--transition-base);
-  box-shadow: var(--shadow-sm);
-  position: relative;
-  border: 1px solid var(--primary-blue-dark);
-  letter-spacing: 0.01em;
-}
-
-.nav-link.contact-btn::after {
-  display: none;
-}
-
-.nav-link.contact-btn:hover {
-  background: var(--primary-blue-dark);
-  color: white;
-  border-color: var(--primary-blue-darker);
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-1px);
+  /* Match regular nav-link look: no pill, no border */
+  background: none;
+  color: var(--text-primary);
+  padding: 0.5rem 0;
+  border-radius: 0;
+  font-weight: 500;
+  box-shadow: none;
+  border: none;
 }
 
 /* 1. Ensure the container spans the full height of the navbar */

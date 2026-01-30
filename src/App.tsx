@@ -11,16 +11,19 @@ import QualityTraining from './components/QualityTraining'
 import Blog from './components/Blog'
 import BlogArticle from './components/BlogArticle'
 import ECTDAI from './components/ECTDAI'
+import ContactUs from './components/ContactUs'
 import VideoCreationService from './components/VideoCreationService'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import TermsOfUse from './components/TermsOfUse'
 import ScheduleDemo from './components/ScheduleDemo'
 import ECTDDemo from './components/ECTDDemo'
+import ScrollToTop from './components/ScrollToTop'
 import './App.css'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={
           <div className="App">
@@ -66,6 +69,13 @@ function App() {
           <div className="App">
             <Navbar />
             <BlogArticle />
+            <Footer />
+          </div>
+        } />
+        <Route path="/contact-us" element={
+          <div className="App">
+            <Navbar />
+            <ContactUs />
             <Footer />
           </div>
         } />

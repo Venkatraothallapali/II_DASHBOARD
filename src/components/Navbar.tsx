@@ -17,7 +17,7 @@ const Navbar: FC = () => {
   const productsMenu: DropdownItem[] = [
     { label: 'Compliance Loop', href: 'https://complianceloop.netlify.app/#home' },
     { label: 'CompliSense', href: 'https://gmpproduct.netlify.app/dashboard' },
-    { label: 'VeritaScribe', href: 'https://veritascribeproductpag.netlify.app/' },
+    { label: 'VeritaScribe', href: 'https://veritascribe.netlify.app/' },
     { label: 'Video Creation Service', href: '/video-creation-service' },
     { label: 'ECTD AI', href: '/ectd-ai' }
   ]
@@ -237,12 +237,14 @@ const Navbar: FC = () => {
 
         <div className="nav-actions">
           <a 
-            href="https://www.industryiceberg.com/contact-us/" 
+            href="/contact-us"
             className="nav-link contact-btn"
-            target="_blank"
-            rel="noopener noreferrer"
+            onClick={(e) => {
+              e.preventDefault()
+              navigate('/contact-us')
+            }}
           >
-            Contact
+            Contact Us
           </a>
         </div>
       </div>

@@ -121,7 +121,7 @@ const ProductsShowcase: FC = () => {
               </li>
             </ul>
             <a 
-              href="https://veritascribeproductpag.netlify.app/" 
+              href="https://veritascribe.netlify.app/" 
               className="product-link"
               target="_blank"
               rel="noopener noreferrer"

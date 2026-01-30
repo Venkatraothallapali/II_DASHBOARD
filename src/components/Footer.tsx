@@ -1,4 +1,5 @@
 import type { FC } from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const Footer: FC = () => {
@@ -37,11 +38,11 @@ const Footer: FC = () => {
           <div className="footer-section">
             <h3 className="footer-heading">Products</h3>
             <ul className="footer-links">
-              <li><a href="https://complianceloop.netlify.app/#home">Compliance Loop</a></li>
-              <li><a href="https://gmpproduct.netlify.app/dashboard">CompliSense</a></li>
-              <li><a href="https://veritascribeproductpag.netlify.app/">VeritaScribe</a></li>
-              <li><a href="/video-creation-service">Video Creation Service</a></li>
-              <li><a href="/ectd-ai">ECTD AI</a></li>
+              <li><a href="https://complianceloop.netlify.app/#home" target="_blank" rel="noopener noreferrer">Compliance Loop</a></li>
+              <li><a href="https://gmpproduct.netlify.app/dashboard" target="_blank" rel="noopener noreferrer">CompliSense</a></li>
+              <li><a href="https://veritascribe.netlify.app/" target="_blank" rel="noopener noreferrer">VeritaScribe</a></li>
+              <li><Link to="/video-creation-service">Video Creation Service</Link></li>
+              <li><Link to="/ectd-ai">ECTD AI</Link></li>
             </ul>
           </div>
 
