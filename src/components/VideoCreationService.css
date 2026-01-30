@@ -10,8 +10,12 @@
 
 /* Header */
 .video-header {
-  /* Solid brand header background (no image) */
-  background: linear-gradient(135deg, #1e82c9 0%, #1e82c9 100%);
+  /* Background image with neutral dark overlay (no blue) */
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%),
+                    url('/assets/Video_prod_BG_img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 6rem 2rem 4rem 2rem;
   color: white;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -22,8 +26,6 @@
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;
-  /* Keep header title + subtitle lifted up by ~1cm */
-  transform: translateY(-1cm);
 }
 
 .header-logo {
@@ -368,7 +370,7 @@
 
 .stat-card {
   padding: 2rem;
-  background: linear-gradient(135deg, #1e82c9 0%, #10455C 100%);
+  background: linear-gradient(135deg, #1e82c9 100%);
   border-radius: 0.75rem;
   text-align: center;
   color: white;
@@ -499,7 +501,7 @@
 
 /* CTA card (replaces pricing) */
 .cta-card {
-  background: linear-gradient(135deg, #0f4c75 0%, #1b6fa8 100%);
+  background: linear-gradient(135deg, #1e82c9 100%);
   color: #fff;
   border-radius: 12px;
   padding: 2.5rem;

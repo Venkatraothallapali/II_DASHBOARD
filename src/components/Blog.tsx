@@ -55,17 +55,6 @@ const Blog: FC = () => {
                 </div>
                 <h2 className="blog-post-title">{post.title}</h2>
                 <p className="blog-post-excerpt">{post.excerpt}</p>
-                {post.links && (
-                  <ul className="blog-post-links">
-                    {post.links.map((link: { label: string; url: string }) => (
-                      <li key={link.url}>
-                        <a href={link.url} target="_blank" rel="noopener noreferrer">
-                          {link.label}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                )}
                 <div className="blog-post-footer">
                   <div className="blog-post-author">
                     <span className="blog-author-name">{post.author}</span>

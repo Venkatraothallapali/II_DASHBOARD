@@ -15,7 +15,7 @@ const Navbar: FC = () => {
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   const productsMenu: DropdownItem[] = [
-    { label: 'CDMO Finder', href: 'https://tubular-douhua-2d2ec6.netlify.app/' },
+    { label: 'Compliance Loop', href: 'https://complianceloop.netlify.app/#home' },
     { label: 'CompliSense', href: 'https://gmpproduct.netlify.app/dashboard' },
     { label: 'VeritaScribe', href: 'https://veritascribeproductpag.netlify.app/' },
     { label: 'Video Creation Service', href: '/video-creation-service' },

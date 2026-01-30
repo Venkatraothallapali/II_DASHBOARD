@@ -85,6 +85,23 @@ const BlogArticle: FC = () => {
             </section>
           )}
 
+          {article.links && article.links.length > 0 && (
+            <section className="blog-article-section">
+              <h2 className="section-title">Reference Links</h2>
+              <div className="section-content">
+                <ul className="blog-post-links">
+                  {article.links.map((link) => (
+                    <li key={link.url}>
+                      <a href={link.url} target="_blank" rel="noopener noreferrer">
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+          )}
+
           <div className="blog-article-footer">
             <button 
               onClick={() => {
